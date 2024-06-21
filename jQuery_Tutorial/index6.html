@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        $(document).ready method
+    </h1>
+    <p>
+        Actually when the webpage is too long some loading time it takes so we have to gurantee that all JS files should not be run until the whole website is loaded so for that document ready method is used.
+    </p>
+    <p class="para1">Paragraph1</p>
+    <p id="para2">Paragraph2</p>
+</body>
+    <!--We can download the entire jquery folder and we can use it-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            //all jQuery codes should be here
+            //Syntax of jQuery
+            //$('selector').action()
+            $('.para1').click(function() //run the function when click on p tag
+            {
+                console.log("You clicked on a p tag which has para1 class");
+            });
+            $('#para2').click(function() //run the function when click on p tag
+            {
+                console.log("You clicked on a p tag which has para2 id");
+            });
+        });
+    </script>
+</html>

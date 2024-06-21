@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        Events in jQuery
+    </h1>
+    <p> 
+        Mouse events- click, dblclick, mouseenter, mouseleave, mouseup, mouseover, hover
+        Keyboard events- keypress,keydown,keyup
+        Form events- submit, change, focus, blur
+        Document/ Window events- load, resize, scroll, unload
+        To know more events refer jQuery documentation
+    </p>
+    <div class="div1">Part1</div>
+    <div id="div2">Part2</div>
+    <div class="div3">Part3</div>
+    <div id="div4">Part4</div>
+</body>
+    <!--We can download the entire jquery folder and we can use it-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            //all jQuery codes should be here
+            //Syntax of jQuery
+            //$('selector').action()
+            $('.div1').dblclick(function() //run the function when doubleclicked on div tag
+            {
+                console.log("You double clicked on a div tag which has div1 class");
+            });
+            $('#div2').click(function() //run the function when click on p tag
+            {
+                console.log("You clicked on a div tag which has div2 id");
+            });
+        });
+    </script>
+</html>

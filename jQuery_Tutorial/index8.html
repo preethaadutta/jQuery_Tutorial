@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        on method in jQuery
+    </h1>
+    <p>It is a paragraph</p>
+    <div class="div1">Part1</div>
+    <div id="div2">Part2</div>
+    <div class="div3">Part3</div>
+    <div id="div4">Part4</div>
+</body>
+    <!--We can download the entire jquery folder and we can use it-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            //all jQuery codes should be here
+            //Syntax of jQuery
+            //$('selector').action()
+            //on method
+            $('.div1').on('click', function()
+            {
+                console.log("You clicked on a div tag which has div1 class");
+            });
+        });
+        //Adding multiple event handlers
+        
+    </script>
+</html>

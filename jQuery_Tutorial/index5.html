@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selecting a tag based on a class or id</h1>
+    <p class="para1">Paragraph1</p>
+    <p id="para2">Paragraph2</p>
+    <p>Paragraph3</p>
+    <p>Paragraph4</p>
+    <p>Paragraph5</p>
+</body>
+<!--jQuery simplifies javaScript programming. It helps to manipulate DOM and Ajax. In jQuery some plugins are there, which we can download. We can do anything by using plugins. If we write jQuery then we can do the things faster by writing simple codes than writing long code of JS. jQuery is a library of JS.-->
+    <!--We can download the entire jquery folder and we can use it-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        console.log($);/*$ means jQuery itself*/
+        console.log("We are using jQuery");
+        //Syntax of jQuery
+        //$('selector').action()
+        $('.para1').click(function() //run the function when click on p tag
+        {
+            console.log("You clicked on a p tag which has para1 class");
+        });
+        $('#para2').click(function() //run the function when click on p tag
+        {
+            console.log("You clicked on a p tag which has para2 id");
+        });
+    </script>
+</html>

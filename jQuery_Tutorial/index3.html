@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>This is a paragraph</p>
+    <h6>It will be hided when you click on it</h6>
+</body>
+<!--jQuery simplifies javaScript programming. It helps to manipulate DOM and Ajax. In jQuery some plugins are there, which we can download. We can do anything by using plugins. If we write jQuery then we can do the things faster by writing simple codes than writing long code of JS. jQuery is a library of JS.-->
+    <!--We can download the entire jquery folder and we can use it-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        console.log($);/*$ means jQuery itself*/
+        console.log("We are using jQuery");
+        //Syntax of jQuery
+        //$('selector').action()
+        //$('p').click();//click on p tag
+        $('p').click(function() //run the function when click on p tag
+        {
+            console.log("You clicked on p tag");
+        });
+        $('h6').click(function() //run the function when click on p tag
+        {
+            //console.log("You clicked on h6 tag");
+            $('h6').hide();//hide the h6 tag when it will be clicked
+        });
+    </script>
+</html>
